@@ -1,96 +1,82 @@
 export const personalInfo = {
-  name: "Lorem Ipsum",
-  location: "Dolor Sit Amet",
-  email: "lorem@ipsum.com",
-  github: "https://github.com/loremipsum",
-  linkedin: "https://linkedin.com/in/loremipsum",
-  profilePicture: "/profile.jpeg",
+  name: "Miguel San Martin Agurto",
+  location: "Chile 🇨🇱",
+  email: "miguel.sanmartin.agurto@gmail.com",
+  github: "https://github.com/miguel-sanmartin-agurto",
+  linkedin: "https://linkedin.com/in/miguel-san-martin-agurto",
+  profilePicture: "/picture_cv.jpg",
   heroDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Electronic Engineer graduated from Universidad Técnica Federico Santa María (6-year program), with 6 years of experience in power systems, focused on energy backup solutions. \n I have worked with UPS systems ranging from 1 to 300 kVA, using both lead-acid and lithium battery technologies.\n I also have experience in photovoltaic systems, both on-grid and off-grid, with installations up to 120 kWp. \n In addition, I have participated in large-scale BESS projects in northern Chile, including 48 MW (264 MWh) and 68 MW (418 MWh) systems, gaining exposure to utility-scale energy storage. \n Alongside my professional work, I actively develop my skills in hardware design, embedded systems, and IoT projects during my free time. I work with microcontrollers and enjoy building practical engineering solutions that combine electronics and software",
 };
 
 export const workExperience = [
   {
-    company: "Lorem Ipsum Corp",
-    location: "Lorem City",
-    position: "Lorem Engineer",
-    period: "Jan 2020 - Present",
+    company: "Onduladores de Chile",
+    location: "Santiago",
+    position: "Applications engineer",
+    period: "Mar 2022 - Feb 2025",
     achievements: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
-      "Sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.",
+      "• Cold and Hot commissioning of BESS systems (68 MW / 48 MW) for Sungrow (as contrator)",
+      "• Development and management of energy backup projects for critical loads, integrating technical desing and economic evaluation",
+      "• Analysis of financial and technical KPIs to support management decision-making",
+      "• Design of basic software and hardware tools for internal use",
     ],
   },
   {
-    company: "Dolor Sit Amet",
-    location: "Ipsumville",
-    position: "Software Developer",
-    period: "Feb 2019 - Jan 2020",
+    company: "Onduladores de Chile",
+    location: "Santiago",
+    position: "Field service engineer",
+    period: "Sep 2019 - Feb 2022",
     achievements: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
+      "• Responsible for installation, repair, and maintenance of energy backup electrical systems ranging from 1 to 300 kVA",
+      "• Preparation of calculation reports and technical documetation for clients",
+      "• Training clients on the use and operation of energy backup systems",
+      "• On-grid and off-grid solar PV commising (up to 120 kWp) panel installation and wiring",
     ],
   },
   {
-    company: "Consectetur Inc.",
-    location: "Adipiscing, Ipsum",
-    position: "Intern",
-    period: "Jun 2018 - Feb 2019",
+    company: "Centro científico tecnológico de Valparaíso (CCTVal).",
+    location: "Valparaíso",
+    position: "Intern: Research assistant",
+    period: "Dic 2018 - Jul 2019",
     achievements: [
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
+      "• Development of an automated station for measuring the radioactivity of sodium-22 isotope, with a specific focus on medical applications",
+      "• Review, calibration, and soldering of the photon detector circuit",
+      "• Data collection related to measurements for subsequent analysis",
     ],
   },
 ];
 
 export const education = [
   {
-    institution: "Lorem Ipsum University",
-    location: "Lorem City",
-    degree: "BSc Lorem Ipsum",
-    period: "2015 - 2019",
+    institution: "Universidad Técnica Federico Santa María",
+    location: "Valparaíso, Chile 🇨🇱 ",
+    degree: "Bachelor of Science in Electronic Engineering (6 years - program)",
+    period: "2011 - 2018",
     achievements: [
-      "President of Lorem Ipsum Club",
-      "Organized multiple lorem events",
-      "Represented university in national competitions.",
-      "Graduated with honors.",
+      "Implementation of a magnetohidrodynamic propulsion system for vessels, October 2018",
     ],
   },
 ];
 export const skills = {
   programmingLanguages: [
-    "LoremLang",
-    "IpsumScript",
-    "DolorLang",
-    "SitLang",
-    "AmetLang",
-    "ConsecteturLang",
+    "Python",
+    "C / C++",
+    "SQL",
+    "PLC programming",   
+  
   ],
-  frontendDevelopment: [
-    "LoremJS",
-    "IpsumJS",
-    "Dolor Native",
-    "Sit UI",
-    "Amet CSS",
-    "HTML",
-    "CSS",
+  softwares: [
+    "Matlab-Simulink",
+    "Plecs",
+    "Kicad",
+    "Freecad",
+    "Microsoft office (Excel, Powerpoint, BI)",
   ],
-  backendDevelopment: ["LoremNode", "IpsumExpress"],
-  databaseAndStorage: ["LoremDB", "IpsumORM"],
-  cloudAndDevOps: ["LoremCloud"],
-  toolsAndServices: [
-    "LoremAuth",
-    "IpsumCMS",
-    "DolorAnalytics",
-    "SitValidator",
-    "AmetMonitor",
-    "ConsecteturPanel",
-    "AdipiscingTrigger",
-  ],
+  embeddedsystems: ["Microcontrollers (AVR, ESP32)", "Protocols (I2C, SPI, UART, LoRaWan)" , ],
+  collaborativetools: ["Microsoft Teams", "Jira", "Trello",],
+ 
+  
 };
 
 export const projects = [
