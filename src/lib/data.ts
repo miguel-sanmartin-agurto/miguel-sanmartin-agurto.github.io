@@ -16,10 +16,10 @@ export const workExperience = [
     position: "Applications engineer",
     period: "Mar 2022 - Feb 2025",
         achievements: [
-      "• Cold and Hot commissioning of BESS systems (68 MW / 48 MW) for Sungrow (as contrator)",
-      "• Development and management of energy backup projects for critical loads, integrating technical desing and economic evaluation",
-      "• Analysis of financial and technical KPIs to support management decision-making",
-      "• Design of basic software and hardware tools for internal use",
+      " Cold and Hot commissioning of BESS systems (68 MW / 48 MW) for Sungrow (as contrator)",
+      " Development and management of energy backup projects for critical loads, integrating technical desing and economic evaluation",
+      " Analysis of financial and technical KPIs to support management decision-making",
+      " Design of basic software and hardware tools for internal use",
     ],
     images: ["/experiencia/AE_1.jpg","/experiencia/AE_2.jpg","/experiencia/AE_3.jpg","/experiencia/AE_4.jpg","/experiencia/AE_5.jpg","/experiencia/AE_6.jpg","/experiencia/AE_7.jpg","/experiencia/AE_8.jpg"]
   },
@@ -29,10 +29,10 @@ export const workExperience = [
     position: "Field service engineer",
     period: "Sep 2019 - Feb 2022",
     achievements: [
-      "• Responsible for installation, repair, and maintenance of energy backup electrical systems ranging from 1 to 300 kVA",
-      "• Preparation of calculation reports and technical documetation for clients",
-      "• Training clients on the use and operation of energy backup systems",
-      "• On-grid and off-grid solar PV commising (up to 120 kWp) panel installation and wiring",
+      " Responsible for installation, repair, and maintenance of energy backup electrical systems ranging from 1 to 300 kVA",
+      " Preparation of calculation reports and technical documetation for clients",
+      " Training clients on the use and operation of energy backup systems",
+      " On-grid and off-grid solar PV commising (up to 120 kWp) panel installation and wiring",
     ],
     images: ["/experiencia/FS_1.jpg","/experiencia/FS_2.jpg","/experiencia/FS_3.jpg","/experiencia/FS_4.jpg","/experiencia/FS_5.jpg","/experiencia/FS_6.jpg","/experiencia/FS_7.jpg","/experiencia/FS_8.jpg","/experiencia/FS_9.jpg","/experiencia/FS_10.jpg"]
   },
@@ -42,9 +42,9 @@ export const workExperience = [
     position: "Intern: Research assistant",
     period: "Dic 2018 - Jul 2019",
     achievements: [
-      "• Development of an automated station for measuring the radioactivity of sodium-22 isotope, with a specific focus on medical applications",
-      "• Review, calibration, and soldering of the photon detector circuit",
-      "• Data collection related to measurements for subsequent analysis",
+      " Development of an automated station for measuring the radioactivity of sodium-22 isotope, with a specific focus on medical applications",
+      " Review, calibration, and soldering of the photon detector circuit",
+      " Data collection related to measurements for subsequent analysis",
     ],
     images: ["/experiencia/RA_1.jpg","/experiencia/RA_2.jpg","/experiencia/RA_3.jpg","/experiencia/RA_4.jpg","/experiencia/RA_5.jpg","/experiencia/RA_6.jpg","/experiencia/RA_7.jpg","/experiencia/RA_8.jpg"]
   },

@@ -106,12 +106,15 @@ export default function HeroSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <div className="relative group"> {/* Añadí 'group' por si no estaba, para que el hover funcione bien */}
+              {/* Resplandor exterior (Glow) con colores de PCB */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              
               <img
                 src={personalInfo.profilePicture}
                 alt="Profile"
-                className="w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
+                /* Cambiamos 'ring-purple-500/50' por 'ring-emerald-500/50' */
+                className="w-48 md:w-60 rounded-full relative ring-2 ring-emerald-500/50"
                 style={{ objectFit: "cover" }}
               />
             </div>
@@ -119,9 +122,11 @@ export default function HeroSection() {
         </motion.div>
 
         <MotionWrapper>
-          <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
+          {/* Cambiamos el fondo del gradiente a tonos verdes suaves (opacidad /10) */}
+          <div className="bg-gradient-to-r from-emerald-500/10 to-green-600/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-emerald-500/20 dark:border-emerald-500/10 shadow-sm">
             <p className="text-muted-foreground pl-4 py-2 mb-4 relative whitespace-pre-line">
-              <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
+              {/* Esta es la barra vertical lateral: ahora emula el color de una pista de PCB */}
+              <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-emerald-400 to-green-600 rounded-full"></span>
               {personalInfo.heroDescription}
             </p>
           </div>
