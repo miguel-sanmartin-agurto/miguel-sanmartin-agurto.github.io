@@ -21,7 +21,7 @@ export const workExperience = [
       "• Analysis of financial and technical KPIs to support management decision-making",
       "• Design of basic software and hardware tools for internal use",
     ],
-    images: ["/Experiencia/AE_1.jpg","/Experiencia/AE_2.jpg","/Experiencia/AE_3.jpg","/Experiencia/AE_4.jpg","/Experiencia/AE_5.jpg","/Experiencia/AE_6.jpg","/Experiencia/AE_7.jpg","/Experiencia/AE_8.jpg"]
+    images: ["/experiencia/AE_1.jpg","/experiencia/AE_2.jpg","/experiencia/AE_3.jpg","/experiencia/AE_4.jpg","/experiencia/AE_5.jpg","/experiencia/AE_6.jpg","/experiencia/AE_7.jpg","/experiencia/AE_8.jpg"]
   },
   {
     company: "Onduladores de Chile",
@@ -34,7 +34,7 @@ export const workExperience = [
       "• Training clients on the use and operation of energy backup systems",
       "• On-grid and off-grid solar PV commising (up to 120 kWp) panel installation and wiring",
     ],
-    images: ["/Experiencia/FS_1.jpg","/Experiencia/FS_2.jpg","/Experiencia/FS_3.jpg","/Experiencia/FS_4.jpg","/Experiencia/FS_5.jpg","/Experiencia/FS_6.jpg","/Experiencia/FS_7.jpg","/Experiencia/FS_8.jpg","/Experiencia/FS_9.jpg","/Experiencia/FS_10.jpg"]
+    images: ["/experiencia/FS_1.jpg","/experiencia/FS_2.jpg","/experiencia/FS_3.jpg","/experiencia/FS_4.jpg","/experiencia/FS_5.jpg","/experiencia/FS_6.jpg","/experiencia/FS_7.jpg","/experiencia/FS_8.jpg","/experiencia/FS_9.jpg","/experiencia/FS_10.jpg"]
   },
   {
     company: "Centro científico tecnológico de Valparaíso (CCTVal).",
@@ -46,7 +46,7 @@ export const workExperience = [
       "• Review, calibration, and soldering of the photon detector circuit",
       "• Data collection related to measurements for subsequent analysis",
     ],
-    images: ["/Experiencia/RA_1.jpg","/Experiencia/RA_2.jpg","/Experiencia/RA_3.jpg","/Experiencia/RA_4.jpg","/Experiencia/RA_5.jpg","/Experiencia/RA_6.jpg","/Experiencia/RA_7.jpg","/Experiencia/RA_8.jpg"]
+    images: ["/experiencia/RA_1.jpg","/experiencia/RA_2.jpg","/experiencia/RA_3.jpg","/experiencia/RA_4.jpg","/experiencia/RA_5.jpg","/experiencia/RA_6.jpg","/experiencia/RA_7.jpg","/experiencia/RA_8.jpg"]
   },
 ];
 
