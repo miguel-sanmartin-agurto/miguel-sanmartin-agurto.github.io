@@ -6,7 +6,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/miguel-san-martin-agurto",
   profilePicture: "/picture_cv.jpg",
   heroDescription:
-    "Electronic Engineer graduated from Universidad Técnica Federico Santa María (6-year program), with 6 years of experience in power systems, focused on energy backup solutions. \n I have worked with UPS systems ranging from 1 to 300 kVA, using both lead-acid and lithium battery technologies.\n I also have experience in photovoltaic systems, both on-grid and off-grid, with installations up to 120 kWp. \n In addition, I have participated in large-scale BESS projects in northern Chile, including 48 MW (264 MWh) and 68 MW (418 MWh) systems, gaining exposure to utility-scale energy storage. \n Alongside my professional work, I actively develop my skills in hardware design, embedded systems, and IoT projects during my free time. I work with microcontrollers and enjoy building practical engineering solutions that combine electronics and software",
+    "Electronic Engineer graduated from Universidad Técnica Federico Santa María (6-years program) in 2018, with experience in power systems, focused on energy backup solutions. \n I have worked with UPS systems ranging from 1 to 300 kVA, using both lead-acid and lithium battery technologies.\n I also have experience in photovoltaic systems, both on-grid and off-grid, with installations up to 120 kWp. \n In addition, I have participated in large-scale BESS projects in northern Chile, including 48 MW (264 MWh) and 68 MW (418 MWh) systems, gaining exposure to utility-scale energy storage. \n Alongside my professional work, I actively develop my skills in hardware design, embedded systems, and IoT projects during my free time. I work with microcontrollers and enjoy building practical engineering solutions that combine electronics and software.",
 };
 
 export const workExperience = [
@@ -15,12 +15,13 @@ export const workExperience = [
     location: "Santiago",
     position: "Applications engineer",
     period: "Mar 2022 - Feb 2025",
-    achievements: [
+        achievements: [
       "• Cold and Hot commissioning of BESS systems (68 MW / 48 MW) for Sungrow (as contrator)",
       "• Development and management of energy backup projects for critical loads, integrating technical desing and economic evaluation",
       "• Analysis of financial and technical KPIs to support management decision-making",
       "• Design of basic software and hardware tools for internal use",
     ],
+    images: ["/Experiencia/AE_1.jpg","/Experiencia/AE_2.jpg","/Experiencia/AE_3.jpg","/Experiencia/AE_4.jpg","/Experiencia/AE_5.jpg","/Experiencia/AE_6.jpg","/Experiencia/AE_7.jpg","/Experiencia/AE_8.jpg"]
   },
   {
     company: "Onduladores de Chile",
@@ -33,6 +34,7 @@ export const workExperience = [
       "• Training clients on the use and operation of energy backup systems",
       "• On-grid and off-grid solar PV commising (up to 120 kWp) panel installation and wiring",
     ],
+    images: ["/Experiencia/FS_1.jpg","/Experiencia/FS_2.jpg","/Experiencia/FS_3.jpg","/Experiencia/FS_4.jpg","/Experiencia/FS_5.jpg","/Experiencia/FS_6.jpg","/Experiencia/FS_7.jpg","/Experiencia/FS_8.jpg","/Experiencia/FS_9.jpg","/Experiencia/FS_10.jpg"]
   },
   {
     company: "Centro científico tecnológico de Valparaíso (CCTVal).",
@@ -44,6 +46,7 @@ export const workExperience = [
       "• Review, calibration, and soldering of the photon detector circuit",
       "• Data collection related to measurements for subsequent analysis",
     ],
+    images: ["/Experiencia/RA_1.jpg","/Experiencia/RA_2.jpg","/Experiencia/RA_3.jpg","/Experiencia/RA_4.jpg","/Experiencia/RA_5.jpg","/Experiencia/RA_6.jpg","/Experiencia/RA_7.jpg","/Experiencia/RA_8.jpg"]
   },
 ];
 
