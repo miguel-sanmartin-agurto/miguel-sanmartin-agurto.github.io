@@ -84,77 +84,58 @@ export const skills = {
 
 export const projects = [
   {
-    title: "Lorem Ipsum Project",
-    github: "https://github.com/loremipsum/project",
+    title: "Ultra-Low Power BLE Sensor Node (ATtiny1616)",
+    github: "https://github.com/miguel-sanmartin-agurto/Low-Power-Sensor-Node",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
+      "A compact, battery-powered IoT sensor node designed for home security and environmental monitoring.",
+      "This device measures atmospheric data and transmits it via Bluetooth Low Energy (BLE), utilizing deep sleep modes to maximize battery life on a single LIR2032 coin cell.",
     ],
   },
   {
-    title: "Dolor Sit Amet App",
-    github: "https://github.com/loremipsum/dolorapp",
+    title: "BLE-to-Cloud-Gateway (ESP32)",
+    github: "https://github.com/miguel-sanmartin-agurto/BLE-to-Cloud-Gateway",
     description: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "This project serves as the central hub for the 'Enviro-Display Node' system.",
+      "Its primary function is to act as a bridge between the low-power sensor network (BLE) and the Internet (Wi-Fi), pushing environmental data to a cloud platform. ",
+    ],
+  },
+    {
+    title: "FireWatch-WL: Autonomous LoRaWAN Wildfire Risk Monitor",
+    github: "https://github.com/miguel-sanmartin-agurto/FireWatch-WL",
+    description: [
+      "This project details the design and implementation of an ultra-low-power, autonomous sensor node built on the STM32WL System-on-Chip (SoC) for early wildfire risk detection. ",
+    ],
+  },
+      {
+    title: "USB-C LiPo Charger",
+    github: "https://github.com/miguel-sanmartin-agurto/USB-C-LiPo-Charger",
+    description: [
+      "A minimal, single-cell (1S) LiPo battery charger powered by a USB-C input. This project is designed to be a simple, low-cost, and compact charging solution for hobbyist electronics.",
     ],
   },
 ];
 
 export const awards = [
   {
-    name: "Lorem Ipsum Award",
-    issuer: "Lorem Organization",
-    date: "Jan 2020",
+    name: "English level B2",
+    issuer: "International english language testing system (IELTS)",
+    date: "May 2023",
     type: "International",
-    position: "First Place",
+    position: "6.5 score",
   },
   {
+    name: "NFPA-70E: Electrical safety in workplace",
+    issuer: "National fire protection association",
+    date: "Ago 2024",
+    type: "National",
+    position: "",
+  },
+    {
     name: "Dolor Sit Amet Prize",
     issuer: "Ipsum Foundation",
     date: "Feb 2021",
     type: "National",
     position: "Runner-up",
   },
-  {
-    name: "Consectetur Hackathon",
-    issuer: "Adipiscing Org",
-    date: "Mar 2022",
-    type: "National",
-    position: "Winner",
-  },
-  {
-    name: "Vestibulum Event",
-    issuer: "Vestibulum College",
-    date: "Apr 2022",
-    type: "National",
-    position: "First Prize",
-  },
-  {
-    name: "Curabitur Hackfest",
-    issuer: "Curabitur Institute",
-    date: "May 2022",
-    type: "National",
-    position: "Second Prize",
-  },
-  {
-    name: "Praesent Hacks",
-    issuer: "Praesent Group",
-    date: "Jun 2022",
-    type: "National",
-    position: "Second Runner-up",
-  },
-  {
-    name: "Fusce Hack",
-    issuer: "Fusce Club",
-    date: "Jul 2022",
-    type: "National",
-    position: "Most Impactful Hack",
-  },
+  
 ];
