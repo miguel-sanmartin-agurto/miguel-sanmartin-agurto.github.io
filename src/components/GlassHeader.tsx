@@ -71,7 +71,7 @@ export default function GlassHeader() {
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["experience", "education", "skills", "projects", "awards"].map(
+              {["experience", "education", "skills", "projects", "certificates"].map(
                 (item, index) => (
                   <motion.a
                     key={item}

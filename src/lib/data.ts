@@ -99,20 +99,7 @@ export const projects = [
       "Its primary function is to act as a bridge between the low-power sensor network (BLE) and the Internet (Wi-Fi), pushing environmental data to a cloud platform. ",
     ],
   },
-    {
-    title: "FireWatch-WL: Autonomous LoRaWAN Wildfire Risk Monitor",
-    github: "https://github.com/miguel-sanmartin-agurto/FireWatch-WL",
-    description: [
-      "This project details the design and implementation of an ultra-low-power, autonomous sensor node built on the STM32WL System-on-Chip (SoC) for early wildfire risk detection. ",
-    ],
-  },
-      {
-    title: "USB-C LiPo Charger",
-    github: "https://github.com/miguel-sanmartin-agurto/USB-C-LiPo-Charger",
-    description: [
-      "A minimal, single-cell (1S) LiPo battery charger powered by a USB-C input. This project is designed to be a simple, low-cost, and compact charging solution for hobbyist electronics.",
-    ],
-  },
+
 ];
 
 export const awards = [
@@ -129,13 +116,6 @@ export const awards = [
     date: "Ago 2024",
     type: "National",
     position: "",
-  },
-    {
-    name: "Dolor Sit Amet Prize",
-    issuer: "Ipsum Foundation",
-    date: "Feb 2021",
-    type: "National",
-    position: "Runner-up",
   },
   
 ];
