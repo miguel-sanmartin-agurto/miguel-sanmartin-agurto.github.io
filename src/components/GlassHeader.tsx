@@ -76,18 +76,23 @@ export default function GlassHeader() {
                   <motion.a
                     key={item}
                     href={`#${item}`}
-                    className="transition-colors hover:text-foreground/80 text-foreground/60 py-2"
-                    onClick={toggleMenu}
+                    className="transition-colors hover:text-foreground/80 text-foreground/60 py-2 block w-full" // block w-full hace que todo el ancho sea clicable
+                    onClick={() => {
+                      // Primero cerramos el menú, luego el href hará su trabajo
+                      if (isMenuOpen) toggleMenu();
+                    }}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.2, delay: index * 0.1 }}
                   >
-                    {item === "experience" && "💼 "}
-                    {item === "education" && "🎓 "}
-                    {item === "skills" && "🛠️ "}
-                    {item === "projects" && "🚀 "}
-                    {item === "certificates" && "📜 "}                    
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                    <span>
+                      {item === "experience" && "💼 "}
+                      {item === "education" && "🎓 "}
+                      {item === "skills" && "🛠️ "}
+                      {item === "projects" && "🚀 "}
+                      {item === "certificates" && "📜 "}
+                      {item.charAt(0).toUpperCase() + item.slice(1)}
+                    </span>
                   </motion.a>
                 )
               )}

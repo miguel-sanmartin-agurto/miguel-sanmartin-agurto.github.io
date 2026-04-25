@@ -47,7 +47,7 @@ export default function ProjectsSection() {
                     ))}
                   </ul>
                 </CardContent>
-                <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30 bg-gradient-to-r from-emerald-500/5 to-emerald-500/5">
+                <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30 bg-gradient-to-r from-emerald-500/5 to-green-900/20">
                   <motion.a
                     href={project.github}
                     target="_blank"
