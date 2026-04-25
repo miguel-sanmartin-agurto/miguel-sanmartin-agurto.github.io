@@ -58,7 +58,7 @@ export default function ExperienceSection() {
                 index={index}
               >
                 <motion.div
-                  className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
+                  className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-emerald-500/20 dark:bg-card/10 dark:border-emerald-500/10 shadow-sm"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
@@ -66,9 +66,10 @@ export default function ExperienceSection() {
                 >
                   {/* --- SECCIÓN: MAIN TASKS --- */}
                   <div className="flex items-center mb-3">
-                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
-                      <Briefcase className="h-4 w-4 text-purple-500" />
-                    </div>
+                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-emerald-500/10 mr-2">
+                      {/* Icono cambiado de text-purple-500 a text-emerald-500 */}
+                      <Briefcase className="h-4 w-4 text-emerald-500" />
+                                          </div>
                     <h4 className="text-sm font-medium">Main tasks</h4>
                   </div>
                   <ul className="list-none ml-4 space-y-2 text-sm mb-6">
@@ -81,7 +82,7 @@ export default function ExperienceSection() {
                         transition={{ duration: 0.3, delay: 0.1 * i }}
                         viewport={{ once: true }}
                       >
-                        <span className="absolute left-0 text-purple-500 font-bold">•</span>
+                        <span className="absolute left-0 text-emerald-500 font-bold">•</span>
                         {achievement}
                       </motion.li>
                     ))}
@@ -90,10 +91,10 @@ export default function ExperienceSection() {
                   {/* --- SECCIÓN: CARRUSEL DE FOTOS --- */}
                   {job.images && job.images.length > 0 && (
                     <div className="relative mt-4 group">
-                      {/* Botón Izquierda */}
+                      {/* Botón Izquierda - Siempre visible */}
                       <button
                         onClick={() => scroll(jobKey, 'left')}
-                        className="absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-purple-600 p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg"
+                        className="absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-emerald-600/80 hover:bg-emerald-500 p-2 rounded-full text-white transition-all duration-300 shadow-lg"
                         aria-label="Scroll left"
                       >
                         <ChevronLeft size={20} />
@@ -121,10 +122,10 @@ export default function ExperienceSection() {
                         ))}
                       </div>
 
-                      {/* Botón Derecha */}
+                      {/* Botón Derecha - Siempre visible */}
                       <button
                         onClick={() => scroll(jobKey, 'right')}
-                        className="absolute right-1 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-purple-600 p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg"
+                        className="absolute right-1 top-1/2 -translate-y-1/2 z-10 bg-emerald-600/80 hover:bg-emerald-500 p-2 rounded-full text-white transition-all duration-300 shadow-lg"
                         aria-label="Scroll right"
                       >
                         <ChevronRight size={20} />
