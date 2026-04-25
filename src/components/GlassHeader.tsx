@@ -70,33 +70,45 @@ export default function GlassHeader() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["experience", "education", "skills", "projects", "certificates"].map(
-                (item, index) => (
-                  <motion.a
-                    key={item}
-                    href={`#${item}`}
-                    className="transition-colors hover:text-foreground/80 text-foreground/60 py-2 block w-full" // block w-full hace que todo el ancho sea clicable
-                    onClick={() => {
-                      // Primero cerramos el menú, luego el href hará su trabajo
-                      if (isMenuOpen) toggleMenu();
-                    }}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.2, delay: index * 0.1 }}
-                  >
-                    <span>
-                      {item === "experience" && "💼 "}
-                      {item === "education" && "🎓 "}
-                      {item === "skills" && "🛠️ "}
-                      {item === "projects" && "🚀 "}
-                      {item === "certificates" && "📜 "}
-                      {item.charAt(0).toUpperCase() + item.slice(1)}
-                    </span>
-                  </motion.a>
-                )
-              )}
-            </nav>
+          <nav className="flex flex-col space-y-4 text-sm font-medium">
+            {["experience", "education", "skills", "projects", "certificates"].map(
+              (item, index) => (
+                <motion.a
+                  key={item}
+                  href={`#${item}`}
+                  className="transition-colors hover:text-foreground/80 text-foreground/60 py-2 block w-full"
+                  onClick={(e) => {
+                    e.preventDefault(); // Detenemos el salto automático
+                    
+                    // 1. Buscamos la sección por su ID
+                    const element = document.getElementById(item);
+                    
+                    if (element) {
+                      // 2. Cerramos el menú primero
+                      toggleMenu();
+                      
+                      // 3. Esperamos un poco a que la animación de cierre inicie y saltamos
+                      setTimeout(() => {
+                        element.scrollIntoView({ behavior: "smooth" });
+                      }, 100); 
+                    }
+                  }}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.2, delay: index * 0.1 }}
+                >
+                  <span>
+                    {item === "experience" && "💼 "}
+                    {item === "education" && "🎓 "}
+                    {item === "skills" && "🛠️ "}
+                    {item === "projects" && "🚀 "}
+                    {item === "certificates" && "📜 "}
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                  </span>
+                </motion.a>
+              )
+            )}
+          </nav>
           </motion.div>
         )}
       </AnimatePresence>
