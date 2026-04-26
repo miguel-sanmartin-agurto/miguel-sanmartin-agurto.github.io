@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 const posts = await getCollection('blog');
 ---
 
-<Layout title="Blog Técnico | Miguel San Martín">
+<Layout title="Technical blog | Miguel San Martín Agurto">
   <main class="pt-32 pb-12 container mx-auto px-6 max-w-4xl">
     
     <div class="mb-8">
@@ -13,16 +13,16 @@ const posts = await getCollection('blog');
         href="/" 
         class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/5 text-emerald-500 text-sm hover:bg-emerald-500/20 transition-all duration-300 shadow-sm"
       >
-        <span class="text-lg">←</span> Volver al Portfolio
+        <span class="text-lg">←</span> Back to my portfolio
       </a>
     </div>
 
-    <h1 class="text-4xl font-bold text-emerald-500 mb-2">Bitácora de Ingeniería</h1>
-    <p class="text-muted-foreground mb-10 italic">Documentación técnica sobre electrónica de potencia y diseño de hardware.</p>
+    <h1 class="text-4xl font-bold text-emerald-500 mb-2">Engineering Log</h1>
+    <p class="text-muted-foreground mb-10 italic">Technical documentation on science and electronics.</p>
     
     {posts.length === 0 ? (
       <div class="p-8 border border-dashed border-emerald-500/20 rounded-lg text-center">
-        <p class="text-muted-foreground">Aún no hay artículos publicados. ¡Vuelve pronto!</p>
+        <p class="text-muted-foreground">No articles have been published yet. Come back soon!</p>
       </div>
     ) : (
       <div class="grid gap-6">
@@ -43,7 +43,7 @@ const posts = await getCollection('blog');
               {post.data.description}
             </p>
             <div class="mt-4 text-emerald-500 text-sm font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-              Leer artículo completo <span>→</span>
+              Read full article <span>→</span>
             </div>
           </a>
         ))}

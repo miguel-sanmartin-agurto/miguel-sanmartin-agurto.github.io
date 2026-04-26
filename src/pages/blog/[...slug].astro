@@ -27,7 +27,7 @@ const { Content } = await entry.render();
           <time datetime={entry.data.pubDate.toISOString()}>
             {entry.data.pubDate.toLocaleDateString('es-CL', {
               year: 'numeric',
-              month: 'long',
+              month: 'numeric',
               day: 'numeric',
             })}
           </time>
@@ -45,7 +45,7 @@ const { Content } = await entry.render();
           href="/blog" 
           class="inline-flex items-center text-emerald-500 hover:text-emerald-400 transition-colors gap-2"
         >
-          <span>←</span> Volver a la bitácora
+          <span>←</span> Back to my technical blog
         </a>
       </footer>
     </article>

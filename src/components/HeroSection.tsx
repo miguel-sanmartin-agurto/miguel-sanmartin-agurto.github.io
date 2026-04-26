@@ -132,6 +132,31 @@ export default function HeroSection() {
           </div>
         </MotionWrapper>
       </div>
+      <div className="flex justify-center w-full mt-8 mb-4"> 
+        <motion.a
+          href="/blog"
+          className="relative inline-flex items-center gap-3 px-8 py-4 rounded-xl 
+                    bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 
+                    font-bold uppercase tracking-wider overflow-hidden group 
+                    shadow-[0_0_15px_rgba(16,185,129,0.1)] transition-all"
+          whileHover={{ 
+            scale: 1.05,
+            boxShadow: "0px 0px 25px rgba(16,185,129,0.3)",
+            borderColor: "rgba(16,185,129,0.6)"
+          }}
+          whileTap={{ scale: 0.95 }}
+        >
+          {/* Efecto de brillo de "pista de cobre" */}
+          <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-emerald-400/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+
+          <span className="text-xl">📝</span>
+          <span className="relative">Check my technical blog</span>
+          
+          {/* Led indicador */}
+          <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_#10b981]"></div>
+        </motion.a>
+      </div>
+
     </section>
   );
 }
