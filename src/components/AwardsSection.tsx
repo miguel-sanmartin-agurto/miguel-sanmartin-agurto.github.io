@@ -51,13 +51,13 @@ export default function AwardsSection() {
                       {award.position}
                     </motion.span>
                   </div>
-                  <motion.span
-                    className="text-xs text-muted-foreground/80 bg-background/50 px-2 py-1 rounded-md w-fit"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    {award.type === "International" ? "🌎 " : "🇨🇱 "}
-                    {award.type}
-                  </motion.span>
+                <motion.span
+                  className="text-xs text-muted-foreground/80 bg-background/50 px-2 py-1 rounded-md w-fit"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  {/* Mostramos directamente lo que escribiste en la variable location */}
+                  {award.location}
+                </motion.span>
                 </div>
               </GlassCard>
             </MotionWrapper>

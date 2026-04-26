@@ -6,15 +6,16 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/miguel-san-martin-agurto",
   profilePicture: "/picture_cv.jpg",
   heroDescription:
-    "Electronic Engineer graduated from Universidad Técnica Federico Santa María (6-years program) in 2018, with experience in power systems, focused on energy backup solutions. \n I have worked with UPS systems ranging from 1 to 300 kVA, using both lead-acid and lithium battery technologies.\n I also have experience in photovoltaic systems, both on-grid and off-grid, with installations up to 120 kWp. \n In addition, I have participated in large-scale BESS projects in northern Chile, including 48 MW (264 MWh) and 68 MW (418 MWh) systems, gaining exposure to utility-scale energy storage. \n Alongside my professional work, I actively develop my skills in hardware design, embedded systems, and IoT projects during my free time. I work with microcontrollers and enjoy building practical engineering solutions that combine electronics and software.",
+    //"Electronic Engineer graduated from Universidad Técnica Federico Santa María in 2018, with experience in power systems, focused on energy backup solutions. \n I have worked with UPS systems ranging from 1 to 300 kVA, using both lead-acid and lithium battery technologies.\n I also have experience in photovoltaic systems, both on-grid and off-grid, with installations up to 120 kWp. \n In addition, I have participated in large-scale BESS projects in northern Chile, including 48 MW (264 MWh) and 68 MW (418 MWh) systems, gaining exposure to utility-scale energy storage. \n Alongside my professional work, I actively develop my skills in hardware design, embedded systems, and IoT projects during my free time. I work with microcontrollers and enjoy building practical engineering solutions that combine electronics and software.",
+    "Electronic Engineer from Universidad Técnica Federico Santa María, graduated in 2018, with a specialization in power systems and automation. I have experience in energy backup systems from 1 to 300 kVA, as well as photovoltaic systems (on-grid and off-grid) up to 120 kWp, and large-scale BESS projects up to 78 MW. I also have experience in data processing and analysis using SQL and Python. Currently, I dedicate my free time to developing hardware and embedded systems.",
 };
 
 export const workExperience = [
   {
     company: "Onduladores de Chile",
-    location: "Santiago",
+    location: "Santiago, Chile",
     position: "Applications engineer",
-    period: "Mar 2022 - Feb 2025",
+    period: "March 2022 - February 2025",
         achievements: [
       " Cold and Hot commissioning of BESS systems (68 MW / 48 MW) for Sungrow (as contrator)",
       " Development and management of energy backup projects for critical loads, integrating technical desing and economic evaluation",
@@ -25,9 +26,9 @@ export const workExperience = [
   },
   {
     company: "Onduladores de Chile",
-    location: "Santiago",
+    location: "Santiago, Chile",
     position: "Field service engineer",
-    period: "Sep 2019 - Feb 2022",
+    period: "September 2019 - February 2022",
     achievements: [
       " Responsible for installation, repair, and maintenance of energy backup electrical systems ranging from 1 to 300 kVA",
       " Preparation of calculation reports and technical documetation for clients",
@@ -38,9 +39,9 @@ export const workExperience = [
   },
   {
     company: "Centro científico tecnológico de Valparaíso (CCTVal).",
-    location: "Valparaíso",
-    position: "Intern: Research assistant",
-    period: "Dic 2018 - Jul 2019",
+    location: "Valparaíso, Chile",
+    position: "Research assistant",
+    period: "December 2018 - July 2019",
     achievements: [
       " Development of an automated station for measuring the radioactivity of sodium-22 isotope, with a specific focus on medical applications",
       " Review, calibration, and soldering of the photon detector circuit",
@@ -70,11 +71,13 @@ export const skills = {
   
   ],
   softwares: [
+    "Autocad",
     "Matlab-Simulink",
     "Plecs",
+    "Visual studio",
     "Kicad",
     "Freecad",
-    "Microsoft office (Excel, Powerpoint, BI)",
+    "Microsoft office",
   ],
   embeddedsystems: ["Microcontrollers (AVR, ESP32)", "Protocols (I2C, SPI, UART, LoRaWan)" , ],
   collaborativetools: ["Microsoft Teams", "Jira", "Trello",],
@@ -107,14 +110,14 @@ export const awards = [
     name: "English level B2",
     issuer: "International english language testing system (IELTS)",
     date: "May 2023",
-    type: "International",
-    position: "6.5 score",
+    location: "🇮🇪 Ireland",
+    position: "6.5 of 9",
   },
   {
     name: "NFPA-70E: Electrical safety in workplace",
     issuer: "National fire protection association",
     date: "Ago 2024",
-    type: "National",
+    location: "🇨🇱 Chile",
     position: "",
   },
   

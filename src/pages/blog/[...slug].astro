@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+// 1. Generar las rutas estáticas para cada archivo en src/content/blog/
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, 
+    props: { entry },
+  }));
+}
+
+// 2. Obtener la entrada (post) y renderizar su contenido
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <main class="pt-32 pb-12 container mx-auto px-6 max-w-3xl">
+    <article>
+      <header class="mb-8 border-b border-emerald-500/10 pb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-emerald-500 mb-4">
+          {entry.data.title}
+        </h1>
+        <div class="flex items-center text-sm text-muted-foreground gap-4">
+          <time datetime={entry.data.pubDate.toISOString()}>
+            {entry.data.pubDate.toLocaleDateString('es-CL', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })}
+          </time>
+          <span class="text-emerald-500/40">|</span>
+          <span>{entry.data.description}</span>
+        </div>
+      </header>
+
+      <div class="prose-custom">
+        <Content />
+      </div>
+
+      <footer class="mt-12 pt-8 border-t border-emerald-500/10">
+        <a 
+          href="/blog" 
+          class="inline-flex items-center text-emerald-500 hover:text-emerald-400 transition-colors gap-2"
+        >
+          <span>←</span> Volver a la bitácora
+        </a>
+      </footer>
+    </article>
+  </main>
+</Layout>
+
+<style is:global>
+  /* Usamos CSS estándar aquí para evitar el error de "unknown utility" de Tailwind v4.
+     Estos estilos se aplicarán a todo lo que genere el componente <Content /> 
+  */
+  .prose-custom h1, 
+  .prose-custom h2, 
+  .prose-custom h3 {
+    color: #10b981; /* emerald-500 */
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .prose-custom h2 { font-size: 1.5rem; }
+  .prose-custom h3 { font-size: 1.25rem; }
+
+  .prose-custom p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    color: #94a3b8; /* slate-400 / muted-foreground */
+  }
+
+  .prose-custom ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #94a3b8;
+  }
+
+  /* Estilos para fórmulas matemáticas (KaTeX) */
+  .katex-display {
+    margin: 2rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: #10b981; /* Las fórmulas se verán verdes como pistas de PCB */
+    padding: 1rem;
+    background: rgba(16, 185, 129, 0.05);
+    border-radius: 0.5rem;
+  }
+</style>
