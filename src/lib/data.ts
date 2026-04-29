@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "miguel.sanmartin.agurto@gmail.com",
   github: "https://github.com/miguel-sanmartin-agurto",
   linkedin: "https://linkedin.com/in/miguel-san-martin-agurto",
-  profilePicture: "/picture_cv.jpg",
+  profilePicture: "/picture2_cv.jpg",
   heroDescription:
     //"Electronic Engineer graduated from Universidad Técnica Federico Santa María in 2018, with experience in power systems, focused on energy backup solutions. \n I have worked with UPS systems ranging from 1 to 300 kVA, using both lead-acid and lithium battery technologies.\n I also have experience in photovoltaic systems, both on-grid and off-grid, with installations up to 120 kWp. \n In addition, I have participated in large-scale BESS projects in northern Chile, including 48 MW (264 MWh) and 68 MW (418 MWh) systems, gaining exposure to utility-scale energy storage. \n Alongside my professional work, I actively develop my skills in hardware design, embedded systems, and IoT projects during my free time. I work with microcontrollers and enjoy building practical engineering solutions that combine electronics and software.",
     "Electronic Engineer from Universidad Técnica Federico Santa María, graduated in 2018, with a specialization in power systems and automation. I have experience in energy backup systems from 1 to 300 kVA, as well as photovoltaic systems (on-grid and off-grid) up to 120 kWp, and large-scale BESS projects up to 78 MW. I also have experience in data processing and analysis using SQL and Python. Currently, I dedicate my free time to developing hardware and embedded systems.",
